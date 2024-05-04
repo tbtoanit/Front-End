@@ -1,0 +1,20 @@
+label {
+    font-weight: bold;
+    color: gray !important
+}
+
+.mycolor.mycolor1 {
+    color: blueviolet;
+}
+
+#salary {
+    color: red;
+}
+
+p[title = 'title1'] {
+    color: red;
+}
+
+p[id = 'id2'] {
+    color: pink;
+}

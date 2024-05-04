@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul li:first-child::before {
+            content: "{";
+        }
+
+        ul li:first-child::after {
+            content: "}";
+        } */
+
+        ul::before {
+            content: "{";
+        }
+
+        ul::after {
+            content: "}";
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+        }
+
+        .flex-item {
+            padding: 10px;
+            background-color: #ddd;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: none;">
+        <ul>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Longan</li>
+            <li>Red Dragon</li>
+        </ul>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">Đà Lạt</div>
+        <div class="flex-item">Hội An</div>
+        <div class="flex-item">Nha Trang</div>
+        <div class="flex-item">Phú Quốc</div>
+    </div>
+</body>
+
+</html>
